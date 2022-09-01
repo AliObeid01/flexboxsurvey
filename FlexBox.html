@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,12 +18,12 @@
            
              <div class="item basis-50">
                 <label>Where did you use our service?</label><br><br>
-                <input type="date">
+                <input class="date-text" type="date">
              </div>
 
              <div class="item basis-50">
                <label>Name of product or service</label><br><br>
-               <input type="text">
+               <input class="input-text" type="text">
              </div>
            
          </div>
@@ -55,18 +56,87 @@
         <div class="flex">
            
              <div class="item basis-50">
-               <input type="radio" name="recommend">
+               <input type="radio" name="expectaion">
                <label>Yes</label>
              </div>
 
              <div class="item basis-50">
-               <input type="radio" name="satisfied">
-               <label>N/A</label>
+               <input type="radio" name="expectaion">
+               <label>No</label>
              </div>
            
         </div>
 
 
+        <label class="label-style">Would you recommend this product or service to a friend?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+               <input type="radio" name="recommend">
+               <label>Yes</label>
+             </div>
+
+             <div class="item basis-50">
+               <input type="radio" name="recommend">
+               <label>No</label>
+             </div>
+           
+        </div>
+
+        <label class="label-style">What aspect of the product or sevice were you most satisfied by?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Quality</label><br>
+                <input type="radio" name="aspect">
+                <label>Customer service</label>
+             </div>
+
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Price</label><br>
+                <input type="radio" name="aspect">
+                <label>Installation or first use experience</label>
+             </div>
+           
+         </div>
+
+        <label class="label-style">What aspect of the product or sevice were you least satisfied by?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Quality</label><br>
+                <input type="radio" name="aspect">
+                <label>Customer service</label>
+             </div>
+
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Price</label><br>
+                <input type="radio" name="aspect">
+                <label>Installation or first use experience</label>
+             </div>
+           
+         </div>
+
+        <label class="label-style">Additional comments:</label>
+        <div class="flex">
+           
+             <div class="item basis-100">
+               <textarea rows="8" cols="65" placeholder="Type here..."></textarea><br>
+             </div>
+           
+         </div>
+
+        <div class="flex center-perfect">
+           
+             <div class="item">
+               <button type="button">Submit</button>
+             </div>
+           
+         </div>
 
      </div>
 </div>
