@@ -1,127 +1,144 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Assignment2</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
+<div class="main-container">
 
-<div class="main-div"> <! --This is the main div that contains several divs-->
+    <div class="flex center white-div">
+        <h1>Follow Up Survey</h1>
+    </div>
 
-<div class="header"> <! --This is the div that contians the header-->
-<h1>Follow up Survey<h1>
+    <div class="flex dir-column">
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <label>Where did you use our service?</label><br><br>
+                <input class="date-text" type="date">
+             </div>
+
+             <div class="item basis-50">
+               <label>Name of product or service</label><br><br>
+               <input class="input-text" type="text">
+             </div>
+           
+         </div>
+
+
+        <label class="label-style">Overall,how satisfied are you with the product or service?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <input type="radio" name="satisfied">
+                <label>Very satisfied</label><br>
+                <input type="radio" name="satisfied">
+                <label>Neutral</label><br>
+                <input type="radio" name="satisfied">
+                <label>Very unsatisfied</label>
+             </div>
+
+             <div class="item basis-50">
+               <input type="radio" name="satisfied">
+               <label>Satisfied</label><br>
+               <input type="radio" name="satisfied">
+               <label>Unsatisfied</label><br>
+               <input type="radio" name="satisfied">
+               <label>N/A</label>
+             </div>
+           
+         </div>
+
+        <label class="label-style">Did our product or service meet your expectaions?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+               <input type="radio" name="expectaion">
+               <label>Yes</label>
+             </div>
+
+             <div class="item basis-50">
+               <input type="radio" name="expectaion">
+               <label>No</label>
+             </div>
+           
+        </div>
+
+
+        <label class="label-style">Would you recommend this product or service to a friend?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+               <input type="radio" name="recommend">
+               <label>Yes</label>
+             </div>
+
+             <div class="item basis-50">
+               <input type="radio" name="recommend">
+               <label>No</label>
+             </div>
+           
+        </div>
+
+        <label class="label-style">What aspect of the product or sevice were you most satisfied by?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Quality</label><br>
+                <input type="radio" name="aspect">
+                <label>Customer service</label>
+             </div>
+
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Price</label><br>
+                <input type="radio" name="aspect">
+                <label>Installation or first use experience</label>
+             </div>
+           
+         </div>
+
+        <label class="label-style">What aspect of the product or sevice were you least satisfied by?</label>
+        <div class="flex">
+           
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Quality</label><br>
+                <input type="radio" name="aspect">
+                <label>Customer service</label>
+             </div>
+
+             <div class="item basis-50">
+                <input type="radio" name="aspect">
+                <label>Price</label><br>
+                <input type="radio" name="aspect">
+                <label>Installation or first use experience</label>
+             </div>
+           
+         </div>
+
+        <label class="label-style">Additional comments:</label>
+        <div class="flex">
+           
+             <div class="item basis-100">
+               <textarea rows="8" cols="65" placeholder="Type here..."></textarea><br>
+             </div>
+           
+         </div>
+
+        <div class="flex center-perfect">
+           
+             <div class="item">
+               <button type="button">Submit</button>
+             </div>
+           
+         </div>
+
+     </div>
 </div>
-
-
-<form> <! --The main div has a form also which contians also several div-->
-
-<! --The class row and column are to divide each div into two equal divs-->
-
-<div class="row">
-  <div class="column">
-   <label>Where did you use our service?</label><br><br>
-   <input class="date-text" type="date">
-  </div>
-  <div class="column">
-   <label>Name of product or service</label><br><br>
-   <input type="text" class="date-text" >
-  </div>
-</div>
-
-
-<div class="row">
-<lable>Overall,how satisfied are you with the product or service?</label><br>
- <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Very satisfied</label><br>
-   <input type="radio" name="satisfied">
-   <label>Neutral</label><br>
-   <input type="radio" name="satisfied">
-   <label>Very unsatisfied</label>
- </div>
-  <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Satisfied</label><br>
-   <input type="radio" name="satisfied">
-   <label>Unsatisfied</label><br>
-   <input type="radio" name="satisfied">
-   <label>N/A</label>
-  </div>
- </div>
-
-
-<div class="row">
-<lable>Did our product or service meet your expectaions?</label><br>
- <div class="column">
-   <input type="radio" name="recommend">
-   <label>Yes</label><br>
- </div>
-  <div class="column">
-   <input type="radio" name="recommend">
-   <label>No</label><br>
-  </div>
- </div>
-
-
-<div class="row">
-<lable>Would you recommend this product or service to a friend?</label><br>
- <div class="column">
-   <input type="radio" name="recommend">
-   <label>Yes</label><br>
- </div>
-  <div class="column">
-   <input type="radio" name="recommend">
-   <label>No</label><br>
-  </div>
- </div>
-
-<div class="row">
-<lable>What aspect of the product or sevice were you most satisfied by?</label><br>
- <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Quality</label><br>
-   <input type="radio" name="satisfied">
-   <label>Customer service</label><br>
- </div>
-  <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Price</label><br>
-   <input type="radio" name="satisfied">
-   <label>Installation or first use experience</label><br>
-  </div>
- </div>
-
-
-<div class="row">
-<lable>What aspect of the product or sevice were you least satisfied by?</label><br>
- <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Quality</label><br>
-   <input type="radio" name="satisfied">
-   <label>Customer service</label><br>
- </div>
-  <div class="column">
-   <input type="radio" name="satisfied">
-   <label>Price</label><br>
-   <input type="radio" name="satisfied">
-   <label>Installation or first use experience</label><br>
-  </div>
- </div>
-
-<div class="row">
- <lable>Additional comments:</label><br>
- <textarea rows="5" cols="60" placeholder="Type here..."></textarea><br>
-</div>
-
-<div class="button-div">
-<button type="button">Submit</button>
-</div>
-
-</form>
-
-</div>
-
 </body>
-
 </html>
