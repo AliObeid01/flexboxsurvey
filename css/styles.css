@@ -28,6 +28,7 @@ h1{
 .main-container {
 
     padding: 3% 30%;
+    
 }
 
 .flex {
@@ -77,6 +78,7 @@ h1{
 
 }
 
+
 .center-perfect {
     align-content: center;
     justify-content: center;
@@ -105,4 +107,5 @@ button{
    padding: 7px 40px;
 
 }
-
+}
+}
